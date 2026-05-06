@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: zhilian-board
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python server_render.py
