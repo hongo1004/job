@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>党政综合办工作分配展板</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            padding: 15px;
+        }
+
+        .container {
+            max-width: 1800px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px 0;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            color: #fff;
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            color: #64c8ff;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .refresh-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 8px 16px;
+            background: rgba(100, 200, 255, 0.2);
+            border: 1px solid rgba(100, 200, 255, 0.4);
+            color: #64c8ff;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 13px;
+            z-index: 100;
+        }
+
+        .refresh-btn:hover {
+            background: rgba(100, 200, 255, 0.3);
+        }
+
+        .stats-row {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 10px;
+            padding: 15px 25px;
+            text-align: center;
+            min-width: 120px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .stat-number {
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .stat-label {
+            color: #8892b0;
+            font-size: 12px;
+            margin-top: 4px;
+        }
+
+        .difficulty-stats {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .difficulty-stat {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 10px 20px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .difficulty-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+
+        .difficulty-dot.high { background: #ff6b6b; }
+        .difficulty-dot.medium { background: #ffd93d; }
+        .difficulty-dot.low { background: #6bcb77; }
+
+        .difficulty-label {
+            color: #a8b2d1;
+            font-size: 13px;
+        }
+
+        .difficulty-count {
+            color: #fff;
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        .main-content {
+            display: flex;
+            gap: 15px;
+        }
+
+        .left-panel {
+            width: 260px;
+            flex-shrink: 0;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            max-height: calc(100vh - 280px);
+            overflow-y: auto;
+        }
+
+        .panel-title {
+            color: #fff;
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .filter-section {
+            margin-bottom: 15px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .filter-label {
+            color: #a8b2d1;
+            font-size: 12px;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .filter-buttons {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 6px 12px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.05);
+            color: #a8b2d1;
+            border-radius: 5px;
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .filter-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .filter-btn.active {
+            background: rgba(100, 200, 255, 0.2);
+            border-color: #64c8ff;
+            color: #64c8ff;
+        }
+
+        .person-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .person-item {
+            padding: 12px 14px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: 1px solid transparent;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .person-item:hover {
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .person-item.active {
+            background: rgba(100, 200, 255, 0.15);
+            border-color: rgba(100, 200, 255, 0.4);
+        }
+
+        .person-name {
+            color: #fff;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .person-count {
+            background: rgba(100, 200, 255, 0.2);
+            color: #64c8ff;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 11px;
+        }
+
+        .right-panel {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            max-height: calc(100vh - 280px);
+            overflow-y: auto;
+        }
+
+        .chart-section {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .chart-card {
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            padding: 15px;
+            flex: 1;
+            min-width: 220px;
+        }
+
+        .chart-title {
+            color: #ccd6f6;
+            font-size: 13px;
+            margin-bottom: 12px;
+        }
+
+        .bar-chart {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .bar-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .bar-label {
+            width: 50px;
+            color: #a8b2d1;
+            font-size: 12px;
+            flex-shrink: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .bar-container {
+            flex: 1;
+            height: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .bar-fill {
+            height: 100%;
+            border-radius: 10px;
+            transition: width 0.5s ease;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 8px;
+            color: #fff;
+            font-size: 11px;
+            font-weight: 500;
+        }
+
+        .work-detail-title {
+            color: #fff;
+            font-size: 15px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .work-detail-title .name {
+            color: #64c8ff;
+        }
+
+        .work-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 12px;
+        }
+
+        .work-category {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 6px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .category-header {
+            background: rgba(100, 200, 255, 0.1);
+            padding: 10px 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .category-level1 {
+            color: #64c8ff;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        .category-level2 {
+            color: #a8b2d1;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .category-count {
+            background: rgba(100, 200, 255, 0.2);
+            color: #64c8ff;
+            padding: 2px 6px;
+            border-radius: 8px;
+            font-size: 10px;
+        }
+
+        .category-tasks {
+            padding: 8px;
+        }
+
+        .task-item {
+            padding: 8px 10px;
+            margin-bottom: 5px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 4px;
+            border-left: 3px solid #64c8ff;
+            transition: all 0.2s;
+        }
+
+        .task-item:hover {
+            transform: translateX(2px);
+        }
+
+        .task-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .task-item.high { border-left-color: #ff6b6b; }
+        .task-item.medium { border-left-color: #ffd93d; }
+        .task-item.low { border-left-color: #6bcb77; }
+
+        .task-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 4px;
+        }
+
+        .task-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 12px;
+            margin-bottom: 12px;
+        }
+
+        .task-card .task-level1 {
+            color: #64c8ff;
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+        .task-card .task-title {
+            color: #fff;
+            font-size: 14px;
+            font-weight: bold;
+            margin: 6px 0;
+        }
+
+        .task-card .info-label,
+        .task-card .info-value {
+            font-size: 12px;
+        }
+
+        .task-name {
+            color: #ccd6f6;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        .task-difficulty {
+            font-size: 10px;
+            padding: 2px 6px;
+            border-radius: 3px;
+            color: #1a1a2e;
+            font-weight: 500;
+        }
+
+        .task-difficulty.high { background: #ff6b6b; }
+        .task-difficulty.medium { background: #ffd93d; }
+        .task-difficulty.low { background: #6bcb77; }
+
+        .task-desc {
+            color: #8892b0;
+            font-size: 11px;
+            line-height: 1.4;
+        }
+
+        .task-remark {
+            color: #ffd700;
+            font-size: 11px;
+            font-style: italic;
+            margin-top: 4px;
+            padding: 4px 8px;
+            background: rgba(255, 215, 0, 0.1);
+            border-radius: 4px;
+        }
+
+        .assign-section {
+            margin-top: 6px;
+            padding-top: 6px;
+            border-top: 1px dashed rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .assign-label {
+            color: #8892b0;
+            font-size: 11px;
+        }
+
+        .assign-select {
+            flex: 1;
+            min-width: 80px;
+            padding: 4px 8px;
+            background: #4a4a6a;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 4px;
+            color: #fff;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .assign-select:focus {
+            outline: none;
+            border-color: #64c8ff;
+        }
+
+        .assign-select option {
+            background: #4a4a6a;
+            color: #fff;
+        }
+
+        .difficulty-select {
+            flex: 1;
+            min-width: 120px;
+            padding: 4px 8px;
+            background: #4a4a6a;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 4px;
+            color: #fff;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .difficulty-select:focus {
+            outline: none;
+            border-color: #64c8ff;
+        }
+
+        .difficulty-select option {
+            background: #4a4a6a;
+            color: #fff;
+        }
+
+        .assign-btn {
+            padding: 4px 10px;
+            background: #64c8ff;
+            border: none;
+            border-radius: 4px;
+            color: #1a1a2e;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .assign-btn:hover {
+            background: #4db8e8;
+        }
+
+        .adjustable-detail-box {
+            background: rgba(135, 206, 235, 0.15);
+            border: 1px solid rgba(135, 206, 235, 0.4);
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px 0;
+        }
+
+        .save-success {
+            background: rgba(107, 203, 119, 0.2);
+            border-color: #6bcb77;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 40px 20px;
+            color: #8892b0;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px 20px;
+            color: #64c8ff;
+        }
+
+        .color-1 { background: linear-gradient(90deg, #667eea, #764ba2); }
+        .color-2 { background: linear-gradient(90deg, #f093fb, #f5576c); }
+        .color-3 { background: linear-gradient(90deg, #4facfe, #00f2fe); }
+        .color-4 { background: linear-gradient(90deg, #43e97b, #38f9d7); }
+        .color-5 { background: linear-gradient(90deg, #fa709a, #fee140); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="refresh-btn" onclick="refreshData()">🔄 刷新数据</button>
+        <div class="header">
+            <h1>🏢 党政综合办工作分配展板</h1>
+            <p>点击左侧人员查看工作内容 | 可按重要程度筛选 | 修改后自动保存到Excel</p>
+        </div>
+
+        <div class="stats-row" id="statsRow">
+            <div class="stat-card">
+                <div class="stat-number" style="color: #64c8ff;" id="totalTasks">-</div>
+                <div class="stat-label">总任务数</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" style="color: #f093fb;" id="totalPersons">-</div>
+                <div class="stat-label">人员数量</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" style="color: #43e97b;" id="avgTasks">-</div>
+                <div class="stat-label">人均任务</div>
+            </div>
+        </div>
+
+        <div class="difficulty-stats" id="difficultyStats">
+        </div>
+
+        <div class="main-content">
+            <div class="left-panel">
+                <div class="filter-section">
+                    <span class="filter-label">🔍 按重要程度筛选</span>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" onclick="filterByDifficulty('all')">全部</button>
+                        <button class="filter-btn" onclick="filterByDifficulty('high')">高难度</button>
+                        <button class="filter-btn" onclick="filterByDifficulty('medium')">中难度</button>
+                        <button class="filter-btn" onclick="filterByDifficulty('low')">低难度</button>
+                    </div>
+                </div>
+
+                <div class="panel-title">👥 人员列表</div>
+                <div class="person-list" id="personList">
+                    <div class="loading">加载中...</div>
+                </div>
+                <div class="panel-title" style="margin-top: 20px; cursor: pointer;" onclick="showAllAdjustable()">🔄 可调整项目</div>
+            </div>
+
+            <div class="right-panel">
+                <div id="contentArea">
+                    <div class="empty-state">
+                        <p>👈 点击左侧人员查看工作内容</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const colors = ['#667eea', '#f093fb', '#4facfe', '#43e97b', '#fa709a'];
+        let currentData = null;
+        let selectedPerson = null;
+        let currentFilter = 'all';
+        const API_BASE = window.location.origin + '/api';
+
+        async function loadData() {
+            try {
+                const response = await fetch(API_BASE + '/load');
+                if (!response.ok) throw new Error('数据加载失败');
+                return await response.json();
+            } catch (error) {
+                console.error('加载错误:', error);
+                return null;
+            }
+        }
+
+        function renderDifficultyStats(data) {
+            const allTasks = data.all_tasks || [];
+            const high = allTasks.filter(t => t.difficulty === 'high').length;
+            const medium = allTasks.filter(t => t.difficulty === 'medium').length;
+            const low = allTasks.filter(t => t.difficulty === 'low').length;
+
+            document.getElementById('difficultyStats').innerHTML = `
+                <div class="difficulty-stat">
+                    <div class="difficulty-dot high"></div>
+                    <span class="difficulty-label">高难度（核心关键）</span>
+                    <span class="difficulty-count">${high}</span>
+                </div>
+                <div class="difficulty-stat">
+                    <div class="difficulty-dot medium"></div>
+                    <span class="difficulty-label">中难度（重要常规）</span>
+                    <span class="difficulty-count">${medium}</span>
+                </div>
+                <div class="difficulty-stat">
+                    <div class="difficulty-dot low"></div>
+                    <span class="difficulty-label">低难度（基础事务）</span>
+                    <span class="difficulty-count">${low}</span>
+                </div>
+            `;
+        }
+
+        function renderStats(data) {
+            const persons = data.persons || [];
+            const total = persons.reduce((sum, p) => sum + p.count, 0);
+            const avg = persons.length > 0 ? (total / persons.length).toFixed(1) : 0;
+
+            document.getElementById('totalTasks').textContent = total;
+            document.getElementById('totalPersons').textContent = persons.length;
+            document.getElementById('avgTasks').textContent = avg;
+        }
+
+        function filterTasks(tasks, difficulty) {
+            if (difficulty === 'all') return tasks;
+            return tasks.filter(t => t.difficulty === difficulty);
+        }
+
+        function renderPersonList(data, difficulty = 'all') {
+            const persons = data.persons || [];
+            const listEl = document.getElementById('personList');
+            
+            listEl.innerHTML = persons.map((person, index) => {
+                const filteredCount = filterTasks(person.tasks, difficulty).length;
+                return `
+                    <div class="person-item ${index === 0 ? 'active' : ''}" onclick="selectPerson(${index})">
+                        <span class="person-name">${person.name}</span>
+                        <span class="person-count">${filteredCount}项</span>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function renderAdjustableList(data) {
+            const allTasks = data.all_tasks || [];
+            const adjustableTasks = allTasks.filter(t => t.adjustable && t.adjustable.trim() !== '');
+            const listEl = document.getElementById('adjustableList');
+            
+            if (adjustableTasks.length === 0) {
+                listEl.innerHTML = '<div class="empty-state"><p>暂无可调整项目</p></div>';
+                return;
+            }
+            
+            listEl.innerHTML = adjustableTasks.map((task, index) => `
+                <div class="person-item" onclick="selectAdjustableTask(${index})">
+                    <span class="person-name">${task.level3}</span>
+                </div>
+            `).join('');
+        }
+
+        function selectAdjustableTask(index) {
+            const allTasks = currentData.all_tasks || [];
+            const adjustableTasks = allTasks.filter(t => t.adjustable && t.adjustable.trim() !== '');
+            const task = adjustableTasks[index];
+            
+            document.querySelectorAll('.person-item').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('#adjustableList .person-item')[index].classList.add('active');
+            
+            document.getElementById('contentArea').innerHTML = renderAdjustableTaskDetail(task, currentData);
+        }
+
+        function toggleAdjustableList() {
+            showAllAdjustable();
+        }
+
+        function showAllAdjustable() {
+            if (!currentData) return;
+            
+            const allTasks = currentData.all_tasks || [];
+            const adjustableTasks = allTasks.filter(t => t.adjustable && t.adjustable.trim() !== '');
+            
+            document.getElementById('contentArea').innerHTML = adjustableTasks.map((task, index) => renderAdjustableTaskDetail(task, currentData, index)).join('');
+        }
+
+        function renderAdjustableTaskDetail(task, data, index) {
+            const difficultyColors = {
+                'high': '#ff6b6b',
+                'medium': '#ffd93d', 
+                'low': '#6bcb77'
+            };
+            const difficultyLabels = {
+                'high': '高难度（核心关键）',
+                'medium': '中难度（重要常规）',
+                'low': '低难度（基础事务）'
+            };
+            
+            return `
+                <div class="task-card" id="task-${task.level3.replace(/\s/g, '-')}">
+                    <div class="task-header">
+                        <span class="task-level1">${task.level1}</span>
+                        <span class="difficulty-badge" style="background: ${difficultyColors[task.difficulty]}">${difficultyLabels[task.difficulty]}</span>
+                    </div>
+                    <div class="task-title">${task.level3}</div>
+                    ${task.description ? `<div class="task-desc">${task.description}</div>` : ''}
+                    <div class="task-info" style="margin-top: 8px;">
+                        <div class="info-row">
+                            <span class="info-label" style="color: #64c8ff;">当前负责人:</span>
+                            <span class="info-value" style="color: #fff;">${task.current_person}</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label" style="color: #64c8ff;">可调整给:</span>
+                            <span class="info-value" style="color: #fff;">${task.adjustable}</span>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderCharts(data, difficulty = 'all') {
+            const persons = data.persons || [];
+            const filteredPersons = persons.map(p => ({
+                ...p,
+                filteredCount: filterTasks(p.tasks, difficulty).length
+            }));
+            
+            const maxCount = Math.max(...filteredPersons.map(p => p.filteredCount)) || 1;
+            
+            return filteredPersons.map((person, index) => {
+                const width = (person.filteredCount / maxCount) * 100;
+                return `
+                    <div class="bar-item">
+                        <div class="bar-label">${person.name}</div>
+                        <div class="bar-container">
+                            <div class="bar-fill ${['color-1', 'color-2', 'color-3', 'color-4', 'color-5'][index % 5]}" style="width: ${width}%">
+                                ${person.filteredCount}
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function renderPersonDetail(person, data, difficulty = 'all') {
+            const filteredTasks = filterTasks(person.tasks, difficulty);
+            const difficultyOptions = data.difficulty_options || [];
+            
+            const tasksByCategory = {};
+            filteredTasks.forEach(task => {
+                const key = `${task.level1}|${task.level2}`;
+                if (!tasksByCategory[key]) {
+                    tasksByCategory[key] = {
+                        level1: task.level1,
+                        level2: task.level2,
+                        tasks: []
+                    };
+                }
+                tasksByCategory[key].tasks.push(task);
+            });
+
+            const categories = Object.values(tasksByCategory).map(cat => `
+                <div class="work-category">
+                    <div class="category-header">
+                        <div>
+                            <div class="category-level1">${cat.level1}</div>
+                            <div class="category-level2">${cat.level2}</div>
+                        </div>
+                        <div class="category-count">${cat.tasks.length}项</div>
+                    </div>
+                    <div class="category-tasks">
+                        ${cat.tasks.map(task => `
+                            <div class="task-item ${task.difficulty}" id="task-${task.level3.replace(/\s/g, '-')}">
+                                <div class="task-header">
+                                    <div class="task-name">${task.level3}</div>
+                                    <div class="task-difficulty ${task.difficulty}">${task.difficulty_name}</div>
+                                </div>
+                                ${task.description ? `<div class="task-desc">${task.description}</div>` : ''}
+                                ${task.remark ? `<div class="task-remark">📝 备注: ${task.remark}</div>` : ''}
+                                <div class="assign-section">
+                                    <span class="assign-label">分配给:</span>
+                                    <select class="assign-select" id="person-${task.level3.replace(/\s/g, '-')}">
+                                        ${data.persons.map(p => `
+                                            <option value="${p.name}" ${p.name === task.current_person ? 'selected' : ''}>${p.name}</option>
+                                        `).join('')}
+                                    </select>
+                                    <button class="assign-btn" onclick="assignTask('${task.level3}', document.getElementById('person-${task.level3.replace(/\s/g, '-')}').value)">保存</button>
+                                </div>
+                                <div class="assign-section">
+                                    <span class="assign-label">重要程度:</span>
+                                    <select class="difficulty-select" id="diff-${task.level3.replace(/\s/g, '-')}">
+                                        ${difficultyOptions.map(opt => `
+                                            <option value="${opt.value}" ${opt.value === task.difficulty ? 'selected' : ''}>${opt.label}</option>
+                                        `).join('')}
+                                    </select>
+                                    <button class="assign-btn" onclick="saveDifficulty('${task.level3}', document.getElementById('diff-${task.level3.replace(/\s/g, '-')}').value)">保存</button>
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+            `).join('');
+
+            const filteredTotal = filteredTasks.length;
+
+            return `
+                <div class="work-detail-title">
+                    <span class="name">${person.name}</span> 的工作内容 (筛选 ${filteredTotal}/${person.count} 项)
+                </div>
+                <div class="chart-section">
+                    <div class="chart-card" style="flex: 2;">
+                        <div class="chart-title">📊 任务分配对比 (筛选后)</div>
+                        <div class="bar-chart">${renderCharts(data, difficulty)}</div>
+                    </div>
+                </div>
+                <div class="work-categories">
+                    ${categories}
+                </div>
+            `;
+        }
+
+        function selectPerson(index) {
+            selectedPerson = index;
+            const personItems = document.querySelectorAll('.person-item');
+            personItems.forEach((item, i) => {
+                item.classList.toggle('active', i === index);
+            });
+
+            const person = currentData.persons[index];
+            document.getElementById('contentArea').innerHTML = renderPersonDetail(person, currentData, currentFilter);
+        }
+
+        function filterByDifficulty(difficulty) {
+            currentFilter = difficulty;
+            
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            renderPersonList(currentData, difficulty);
+            
+            if (selectedPerson !== null) {
+                const person = currentData.persons[selectedPerson];
+                document.getElementById('contentArea').innerHTML = renderPersonDetail(person, currentData, difficulty);
+            }
+        }
+
+        async function assignTask(taskName, newPerson) {
+            try {
+                const response = await fetch(API_BASE + '/save', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({taskName, newPerson})
+                });
+                const result = await response.json();
+                
+                const taskEl = document.getElementById('task-' + taskName.replace(/\s/g, '-'));
+                if (result.success) {
+                    alert(result.message);
+                    taskEl.classList.add('save-success');
+                    setTimeout(() => taskEl.classList.remove('save-success'), 2000);
+                } else {
+                    alert('保存失败: ' + result.message);
+                }
+            } catch (error) {
+                alert('保存失败: ' + error.message);
+            }
+        }
+
+        async function saveDifficulty(taskName, newDifficulty) {
+            try {
+                const response = await fetch(API_BASE + '/save_difficulty', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({taskName, newDifficulty})
+                });
+                const result = await response.json();
+                
+                const taskEl = document.getElementById('task-' + taskName.replace(/\s/g, '-'));
+                if (result.success) {
+                    alert(result.message);
+                    taskEl.classList.add('save-success');
+                    setTimeout(() => taskEl.classList.remove('save-success'), 2000);
+                } else {
+                    alert('保存失败: ' + result.message);
+                }
+            } catch (error) {
+                alert('保存失败: ' + error.message);
+            }
+        }
+
+        async function refreshData() {
+            const btn = document.querySelector('.refresh-btn');
+            btn.textContent = '加载中...';
+            btn.disabled = true;
+            
+            currentData = await loadData();
+            
+            if (currentData) {
+                renderStats(currentData);
+                renderDifficultyStats(currentData);
+                renderPersonList(currentData, currentFilter);
+                
+                if (selectedPerson !== null && currentData.persons) {
+                    const person = currentData.persons[selectedPerson];
+                    document.getElementById('contentArea').innerHTML = renderPersonDetail(person, currentData, currentFilter);
+                }
+            }
+            
+            btn.textContent = '🔄 刷新数据';
+            btn.disabled = false;
+        }
+
+        async function init() {
+            currentData = await loadData();
+            
+            if (!currentData) {
+                document.getElementById('personList').innerHTML = `
+                    <div class="empty-state">
+                        <p>⚠️ 数据加载失败<br>请确保后端服务已启动</p>
+                    </div>
+                `;
+                return;
+            }
+            
+            renderStats(currentData);
+            renderDifficultyStats(currentData);
+            renderPersonList(currentData);
+            
+            if (currentData.persons && currentData.persons.length > 0) {
+                selectPerson(0);
+            }
+        }
+
+        init();
+    </script>
+</body>
+</html>

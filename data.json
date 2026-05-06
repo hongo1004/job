@@ -1,0 +1,1022 @@
+{
+  "persons": [
+    {
+      "name": "吴琳音",
+      "count": 32,
+      "tasks": [
+        {
+          "level1": "党建工作",
+          "level2": "组织生活",
+          "level3": "支委会",
+          "description": "“三会一课” 的完整记录管理支部手册记录和会议平台资料上传",
+          "remark": "",
+          "adjustable": "",
+          "difficulty": "high",
+          "difficulty_name": "高难度（核心关键）",
+          "current_person": "吴琳音"
+        },
+        {
+          "level1": "党建工作",
+          "level2": "组织生活",
+          "level3": "党员大会（学习会）",
+          "description": "会议组织、支部手册记录",
+          "remark": "",
+          "adjustable": "",
+          "difficulty": "low",
+          "difficulty_name": "低难度（基础事务）",
+          "current_person": "吴琳音"
+        },
+        {
+          "level1": "党建工作",
+          "level2": "组织生活",
+          "level3": "党组织活动台账",
+          "description": "党组织活动台账更新",
+          "remark": "",
+          "adjustable": "",
+          "difficulty": "low",
+          "difficulty_name": "低难度（基础事务）",
+          "current_person": "吴琳音"
+        },
+        {
+          "level1": "党建工作",
+          "level2": "组织生活",
+          "level3": "党费收缴",
+          "description": "党费明细表整理",
+          "remark": "",
+          "adjustable": "",
+          "difficulty": "medium",
+          "difficulty_name": "中难度（重要常规）",
+          "current_person": "吴琳音"
+        },
+        {
+          "level1": "党建工作",
+          "level2": "党员发展",
+          "level3": "党员台账",
+          "description": "党员台账更新",
+          "remark": "",
+          "adjustable": "",
+          "difficulty": "low",
+          "difficulty_name": "低难度（基础事务）",
+          "current_person": "吴琳音"
+        },
+        {
+          "level1": "党建工作",
+          "level2": "党员发展",
+          "level3": "党员资料整理",
+          "description": "入党积极分子、发展对象、预备党员的全流程跟踪和资料整理",
+          "remark": "",
+          "adjustable": "",
+          "difficulty": "medium",
+          "difficulty_name": "中难度（重要常规）",
+          "current_person": "吴琳音"
+        },
+        {
+          "level1": "党建工作",
+          "level2": "组织生活",
+          "level3": "主题党日",
+          "description": "主题党日活动策划实施",
+          "remark": "",
+          "adjustable": "",
+          "difficulty": "medium",
+          "difficulty_name": "中难度（重要常规）",
+          "current_person": "吴琳音"
+        },
+        {
+          "level1": "党建工作",
+          "level2": "组织生活",
+          "level3": "组织生活会与民主评议党员工作",
+          "description": "组织生活会与民主评议党员工作",
+          "remark": "",
+          "adjustable": "",
+          "difficulty": "medium",
+          "difficulty_name": "中难度（重要常规）",
+          "current_person": "吴琳音"
+        },
+        {
+          "level1": "党建工作",
+          "level2": "组织生活",
+          "level3": "年度工作总结+党风廉政建设考核",
+          "description": "党建工作考核、年度总结报告撰写等",
+          "remark": "",
+          "adjustable": "",
+          "difficulty": "medium",
+          "difficulty_name": "中难度（重要常规）",
+          "current_person": "吴琳音"
+        },
+        {
+          "level1": "人事管理",
+          "level2": "培训与人才发展",
+          "level3": "培训实施",
+          "description": "每月一次培训组织",
+          "remark": "",
+          "adjustable": "",
+          "difficulty": "medium",
+          "difficulty_name": "中难度（重要常规）",
+          "current_person": "吴琳音"
+        },
+        {
+          "level1": "人事管理",
+          "level2": "培训与人才发展",
+          "level3": "培训讲师制度",
+          "description": "培训讲师制度制定，以及人员选拔",
+          "remark": "",
+          "adjustable": "",
+          "difficulty": "high",
+          "difficulty_name": "高难度（核心关键）",
+          "current_person": "吴琳音"
+        },
+        {
+          "level1": "人事管理",
+          "level2": "培训与人才发展",
+          "level3": "培训效果评估与转化",
+          "description": "培训效果评估与转化",
+          "remark": "",
+          "adjustable": "",
+          "difficulty": "high",
+          "difficulty_name": "高难度（核心关键）",
+          "current_person": "吴琳音"
+        },
+        {
+          "level1": "人事管理",
+          "level2": "培训与人才发展",
+          "level3": "师带徒",
+          "description": "师带徒方案落地执行",
+          "remark": "",
+          "adjustable": "移交杨妍",
+          "difficulty": "medium",
+          "difficulty_name": "中难度（重要常规）",
+          "current_person": "吴琳音"
+        },
+        {
+          "level1": "人事管理",
+          "level2": "培训与人才发展",
+          "level3": "人才盘点",
+          "description": "人才盘点",
+          "remark": "",
+          "adjustable": "",
+          "difficulty": "high",
+          "difficulty_name": "高难度（核心关键）",
+          "current_person": "吴琳音"
+        },
+        {
+          "level1": "人事管理",
+          "level2": "培训与人才发展",
+          "level3": "员工职业发展通道管理",
+          "description": "人才培养计划落地",
+          "remark": "",
+          "adjustable": "",
+          "difficulty": "high",
+          "difficulty_name": "高难度（核心关键）",
+          "current_person": "吴琳音"
+        },
+        {
+          "level1": "人事管理",
+          "level2": "薪酬管理",
+          "level3": "工资表",
+          "description": "考勤表整理、工资表",
+          "remark": "",
+          "adjustable": "",
+          "difficulty": "high",
+          "difficulty_name": "高难度（核心关键）",
+          "current_person": "吴琳音"
+        },
+        {
+          "level1": "人事管理",
+          "level2": "薪酬管理",
+          "level3": "钉钉考勤系统",
+          "description": "打卡记录、请休假、考勤统计等",
+          "remark": "",
+          "adjustable": "",
+          "difficulty": "medium",
+          "difficulty_name": "中难度（重要常规）",
+          "current_person": "吴琳音"
+        },
+        {
+          "level1": "人事管理",
+          "level2": "薪酬管理",
+          "level3": "常态化数据采集",
+          "description": "薪酬及稳岗就业数据采集工作",
+          "remark": "",
+          "adjustable": "",
+          "difficulty": "medium",
+          "difficulty_name": "中难度（重要常规）",
+          "current_person": "吴琳音"
+        },
+        {
+          "level1": "人事管理",
+          "level2": "薪酬管理",
+          "level3": "季报、年报、工资总额清算、预算",
+          "description": "季报、年报、工资总额清算、预算等报表",
+          "remark": "",
+          "adjustable": "",
+          "difficulty": "high",
+          "difficulty_name": "高难度（核心关键）",
+          "current_person": "吴琳音"
+        },
+        {
+          "level1": "人事管理",
+          "level2": "薪酬管理",
+          "level3": "薪酬制度制定、修订",
+          "description": "部门制度制定、修订",
+          "remark": "",
+          "adjustable": "",
+          "difficulty": "high",
+          "difficulty_name": "高难度（核心关键）",
+          "current_person": "吴琳音"
+        },
+        {
+          "level1": "人事管理",
+          "level2": "人员招聘与配置",
+          "level3": "筛选、面试",
+          "description": "2026年常规招聘4人，新项目招聘14人",
+          "remark": "技术服务事业部主管1人，造价技术负责人2人，技术支持人员1人；监理人员12人，造价人员2人",
+          "adjustable": "杨妍辅助",
+          "difficulty": "medium",
+          "difficulty_name": "中难度（重要常规）",
+          "current_person": "吴琳音"
+        },
+        {
+          "level1": "人事管理",
+          "level2": "人员招聘与配置",
+          "level3": "招聘报告",
+          "description": "新增招聘需求报告撰写、跟进",
+          "remark": "",
+          "adjustable": "",
+          "difficulty": "low",
+          "difficulty_name": "低难度（基础事务）",
+          "current_person": "吴琳音"
+        },
+        {
+          "level1": "人事管理",
+          "level2": "人员招聘与配置",
+          "level3": "人力招聘情况报表",
+          "description": "每月提报招聘情况",
+          "remark": "",
+          "adjustable": "",
+          "difficulty": "low",
+          "difficulty_name": "低难度（基础事务）",
+          "current_person": "吴琳音"
+        },
+        {
+          "level1": "人事管理",
+          "level2": "绩效考核",
+          "level3": "考核方案",
+          "description": "具体部门/岗位的考核方案",
+          "remark": "",
+          "adjustable": "",
+          "difficulty": "high",
+          "difficulty_name": "高难度（核心关键）",
+          "current_person": "吴琳音"
+        },
+        {
+          "level1": "人事管理",
+          "level2": "绩效考核",
+          "level3": "考核制度",
+          "description": "考核制度修订",
+          "remark": "",
+          "adjustable": "",
+          "difficulty": "high",
+          "difficulty_name": "高难度（核心关键）",
+          "current_person": "吴琳音"
+        },
+        {
+          "level1": "人事管理",
+          "level2": "绩效考核",
+          "level3": "绩效评估",
+          "description": "员工绩效考核工作",
+          "remark": "",
+          "adjustable": "",
+          "difficulty": "medium",
+          "difficulty_name": "中难度（重要常规）",
+          "current_person": "吴琳音"
+        },
+        {
+          "level1": "人事管理",
+          "level2": "员工关系",
+          "level3": "花名册",
+          "description": "每月更新员工信息",
+          "remark": "",
+          "adjustable": "移交杨妍",
+          "difficulty": "low",
+          "difficulty_name": "低难度（基础事务）",
+          "current_person": "吴琳音"
+        },
+        {
+          "level1": "人事管理",
+          "level2": "员工关系",
+          "level3": "入离职面谈",
+          "description": "入职背调/离职沟通/辞退面谈",
+          "remark": "",
+          "adjustable": "",
+          "difficulty": "medium",
+          "difficulty_name": "中难度（重要常规）",
+          "current_person": "吴琳音"
+        },
+        {
+          "level1": "人事管理",
+          "level2": "员工关系",
+          "level3": "入转调离",
+          "description": "入转调离手续办理，HR平台信息更新",
+          "remark": "",
+          "adjustable": "移交杨妍",
+          "difficulty": "low",
+          "difficulty_name": "低难度（基础事务）",
+          "current_person": "吴琳音"
+        },
+        {
+          "level1": "人事管理",
+          "level2": "员工关系",
+          "level3": "劳动纠纷处理",
+          "description": "劳动纠纷处理",
+          "remark": "",
+          "adjustable": "",
+          "difficulty": "high",
+          "difficulty_name": "高难度（核心关键）",
+          "current_person": "吴琳音"
+        },
+        {
+          "level1": "人事管理",
+          "level2": "员工关系",
+          "level3": "合同管理",
+          "description": "员工合同台账更新、合同续签",
+          "remark": "",
+          "adjustable": "",
+          "difficulty": "medium",
+          "difficulty_name": "中难度（重要常规）",
+          "current_person": "吴琳音"
+        },
+        {
+          "level1": "人事管理",
+          "level2": "其他",
+          "level3": "审计配合",
+          "description": "内审/外审/专项审计",
+          "remark": "",
+          "adjustable": "",
+          "difficulty": "medium",
+          "difficulty_name": "中难度（重要常规）",
+          "current_person": "吴琳音"
+        }
+      ]
+    },
+    {
+      "name": "杨妍",
+      "count": 13,
+      "tasks": [
+        {
+          "level1": "综合行政",
+          "level2": "公文处理",
+          "level3": "文件收发",
+          "description": "公司函件、任命及对外函件",
+          "remark": "",
+          "adjustable": "",
+          "difficulty": "medium",
+          "difficulty_name": "中难度（重要常规）",
+          "current_person": "杨妍"
+        },
+        {
+          "level1": "综合行政",
+          "level2": "会议组织",
+          "level3": "班子会",
+          "description": "班子会记录和会议平台资料上传",
+          "remark": "",
+          "adjustable": "",
+          "difficulty": "high",
+          "difficulty_name": "高难度（核心关键）",
+          "current_person": "杨妍"
+        },
+        {
+          "level1": "综合行政",
+          "level2": "公车管理",
+          "level3": "车辆管理",
+          "description": "车辆登记、季度保养维修、ETC统计报销",
+          "remark": "",
+          "adjustable": "",
+          "difficulty": "medium",
+          "difficulty_name": "中难度（重要常规）",
+          "current_person": "杨妍"
+        },
+        {
+          "level1": "综合行政",
+          "level2": "印章管理",
+          "level3": "上网章及项目章",
+          "description": "日常用印、项目章刻制回收管理",
+          "remark": "",
+          "adjustable": "",
+          "difficulty": "low",
+          "difficulty_name": "低难度（基础事务）",
+          "current_person": "杨妍"
+        },
+        {
+          "level1": "综合行政",
+          "level2": "对外报表",
+          "level3": "统计报表及五险一金报送",
+          "description": "金牛区、统计局、经济局联网直报平台报送",
+          "remark": "",
+          "adjustable": "",
+          "difficulty": "medium",
+          "difficulty_name": "中难度（重要常规）",
+          "current_person": "杨妍"
+        },
+        {
+          "level1": "工会群团",
+          "level2": "工会综合工作",
+          "level3": "活动组织、职工慰问",
+          "description": "日常慰问、群团委活动组织",
+          "remark": "",
+          "adjustable": "",
+          "difficulty": "medium",
+          "difficulty_name": "中难度（重要常规）",
+          "current_person": "杨妍"
+        },
+        {
+          "level1": "档案管理",
+          "level2": "档案管理",
+          "level3": "项目、机关资料归档",
+          "description": "项目资料纸质件与电子件归档整理",
+          "remark": "",
+          "adjustable": "",
+          "difficulty": "high",
+          "difficulty_name": "高难度（核心关键）",
+          "current_person": "杨妍"
+        },
+        {
+          "level1": "后勤保障",
+          "level2": "生产资源管理",
+          "level3": "物资采购",
+          "description": "办公用品、仪器设备采购报销及管理及维护",
+          "remark": "",
+          "adjustable": "",
+          "difficulty": "low",
+          "difficulty_name": "低难度（基础事务）",
+          "current_person": "杨妍"
+        },
+        {
+          "level1": "宣传工作",
+          "level2": "内外宣传",
+          "level3": "宣传信息工作",
+          "description": "对接院文宣及集团宣传报送",
+          "remark": "",
+          "adjustable": "移交张诸雍",
+          "difficulty": "medium",
+          "difficulty_name": "中难度（重要常规）",
+          "current_person": "杨妍"
+        },
+        {
+          "level1": "人事管理",
+          "level2": "社保管理",
+          "level3": "五险一金",
+          "description": "缴费、台账、业务办理、成本核算",
+          "remark": "",
+          "adjustable": "",
+          "difficulty": "medium",
+          "difficulty_name": "中难度（重要常规）",
+          "current_person": "杨妍"
+        },
+        {
+          "level1": "人事管理",
+          "level2": "职称评审",
+          "level3": "职称评审",
+          "description": "初、中、高级职称初审、聘任及台账",
+          "remark": "",
+          "adjustable": "",
+          "difficulty": "high",
+          "difficulty_name": "高难度（核心关键）",
+          "current_person": "杨妍"
+        },
+        {
+          "level1": "内控风控",
+          "level2": "审计监督",
+          "level3": "内外部审计对接",
+          "description": "内外审、正风肃纪、专项审计",
+          "remark": "",
+          "adjustable": "",
+          "difficulty": "medium",
+          "difficulty_name": "中难度（重要常规）",
+          "current_person": "杨妍"
+        },
+        {
+          "level1": "临时专项",
+          "level2": "其他",
+          "level3": "其他",
+          "description": "公司宣传栏、四楼平台建设、废改立、文件汇编、善建云招投标",
+          "remark": "",
+          "adjustable": "",
+          "difficulty": "medium",
+          "difficulty_name": "中难度（重要常规）",
+          "current_person": "杨妍"
+        }
+      ]
+    }
+  ],
+  "all_tasks": [
+    {
+      "level1": "党建工作",
+      "level2": "组织生活",
+      "level3": "支委会",
+      "description": "“三会一课” 的完整记录管理支部手册记录和会议平台资料上传",
+      "remark": "",
+      "adjustable": "",
+      "difficulty": "high",
+      "difficulty_name": "高难度（核心关键）",
+      "current_person": "吴琳音"
+    },
+    {
+      "level1": "党建工作",
+      "level2": "组织生活",
+      "level3": "党员大会（学习会）",
+      "description": "会议组织、支部手册记录",
+      "remark": "",
+      "adjustable": "",
+      "difficulty": "low",
+      "difficulty_name": "低难度（基础事务）",
+      "current_person": "吴琳音"
+    },
+    {
+      "level1": "党建工作",
+      "level2": "组织生活",
+      "level3": "党组织活动台账",
+      "description": "党组织活动台账更新",
+      "remark": "",
+      "adjustable": "",
+      "difficulty": "low",
+      "difficulty_name": "低难度（基础事务）",
+      "current_person": "吴琳音"
+    },
+    {
+      "level1": "党建工作",
+      "level2": "组织生活",
+      "level3": "党费收缴",
+      "description": "党费明细表整理",
+      "remark": "",
+      "adjustable": "",
+      "difficulty": "medium",
+      "difficulty_name": "中难度（重要常规）",
+      "current_person": "吴琳音"
+    },
+    {
+      "level1": "党建工作",
+      "level2": "党员发展",
+      "level3": "党员台账",
+      "description": "党员台账更新",
+      "remark": "",
+      "adjustable": "",
+      "difficulty": "low",
+      "difficulty_name": "低难度（基础事务）",
+      "current_person": "吴琳音"
+    },
+    {
+      "level1": "党建工作",
+      "level2": "党员发展",
+      "level3": "党员资料整理",
+      "description": "入党积极分子、发展对象、预备党员的全流程跟踪和资料整理",
+      "remark": "",
+      "adjustable": "",
+      "difficulty": "medium",
+      "difficulty_name": "中难度（重要常规）",
+      "current_person": "吴琳音"
+    },
+    {
+      "level1": "党建工作",
+      "level2": "组织生活",
+      "level3": "主题党日",
+      "description": "主题党日活动策划实施",
+      "remark": "",
+      "adjustable": "",
+      "difficulty": "medium",
+      "difficulty_name": "中难度（重要常规）",
+      "current_person": "吴琳音"
+    },
+    {
+      "level1": "党建工作",
+      "level2": "组织生活",
+      "level3": "组织生活会与民主评议党员工作",
+      "description": "组织生活会与民主评议党员工作",
+      "remark": "",
+      "adjustable": "",
+      "difficulty": "medium",
+      "difficulty_name": "中难度（重要常规）",
+      "current_person": "吴琳音"
+    },
+    {
+      "level1": "党建工作",
+      "level2": "组织生活",
+      "level3": "年度工作总结+党风廉政建设考核",
+      "description": "党建工作考核、年度总结报告撰写等",
+      "remark": "",
+      "adjustable": "",
+      "difficulty": "medium",
+      "difficulty_name": "中难度（重要常规）",
+      "current_person": "吴琳音"
+    },
+    {
+      "level1": "人事管理",
+      "level2": "培训与人才发展",
+      "level3": "培训实施",
+      "description": "每月一次培训组织",
+      "remark": "",
+      "adjustable": "",
+      "difficulty": "medium",
+      "difficulty_name": "中难度（重要常规）",
+      "current_person": "吴琳音"
+    },
+    {
+      "level1": "人事管理",
+      "level2": "培训与人才发展",
+      "level3": "培训讲师制度",
+      "description": "培训讲师制度制定，以及人员选拔",
+      "remark": "",
+      "adjustable": "",
+      "difficulty": "high",
+      "difficulty_name": "高难度（核心关键）",
+      "current_person": "吴琳音"
+    },
+    {
+      "level1": "人事管理",
+      "level2": "培训与人才发展",
+      "level3": "培训效果评估与转化",
+      "description": "培训效果评估与转化",
+      "remark": "",
+      "adjustable": "",
+      "difficulty": "high",
+      "difficulty_name": "高难度（核心关键）",
+      "current_person": "吴琳音"
+    },
+    {
+      "level1": "人事管理",
+      "level2": "培训与人才发展",
+      "level3": "师带徒",
+      "description": "师带徒方案落地执行",
+      "remark": "",
+      "adjustable": "移交杨妍",
+      "difficulty": "medium",
+      "difficulty_name": "中难度（重要常规）",
+      "current_person": "吴琳音"
+    },
+    {
+      "level1": "人事管理",
+      "level2": "培训与人才发展",
+      "level3": "人才盘点",
+      "description": "人才盘点",
+      "remark": "",
+      "adjustable": "",
+      "difficulty": "high",
+      "difficulty_name": "高难度（核心关键）",
+      "current_person": "吴琳音"
+    },
+    {
+      "level1": "人事管理",
+      "level2": "培训与人才发展",
+      "level3": "员工职业发展通道管理",
+      "description": "人才培养计划落地",
+      "remark": "",
+      "adjustable": "",
+      "difficulty": "high",
+      "difficulty_name": "高难度（核心关键）",
+      "current_person": "吴琳音"
+    },
+    {
+      "level1": "人事管理",
+      "level2": "薪酬管理",
+      "level3": "工资表",
+      "description": "考勤表整理、工资表",
+      "remark": "",
+      "adjustable": "",
+      "difficulty": "high",
+      "difficulty_name": "高难度（核心关键）",
+      "current_person": "吴琳音"
+    },
+    {
+      "level1": "人事管理",
+      "level2": "薪酬管理",
+      "level3": "钉钉考勤系统",
+      "description": "打卡记录、请休假、考勤统计等",
+      "remark": "",
+      "adjustable": "",
+      "difficulty": "medium",
+      "difficulty_name": "中难度（重要常规）",
+      "current_person": "吴琳音"
+    },
+    {
+      "level1": "人事管理",
+      "level2": "薪酬管理",
+      "level3": "常态化数据采集",
+      "description": "薪酬及稳岗就业数据采集工作",
+      "remark": "",
+      "adjustable": "",
+      "difficulty": "medium",
+      "difficulty_name": "中难度（重要常规）",
+      "current_person": "吴琳音"
+    },
+    {
+      "level1": "人事管理",
+      "level2": "薪酬管理",
+      "level3": "季报、年报、工资总额清算、预算",
+      "description": "季报、年报、工资总额清算、预算等报表",
+      "remark": "",
+      "adjustable": "",
+      "difficulty": "high",
+      "difficulty_name": "高难度（核心关键）",
+      "current_person": "吴琳音"
+    },
+    {
+      "level1": "人事管理",
+      "level2": "薪酬管理",
+      "level3": "薪酬制度制定、修订",
+      "description": "部门制度制定、修订",
+      "remark": "",
+      "adjustable": "",
+      "difficulty": "high",
+      "difficulty_name": "高难度（核心关键）",
+      "current_person": "吴琳音"
+    },
+    {
+      "level1": "人事管理",
+      "level2": "人员招聘与配置",
+      "level3": "筛选、面试",
+      "description": "2026年常规招聘4人，新项目招聘14人",
+      "remark": "技术服务事业部主管1人，造价技术负责人2人，技术支持人员1人；监理人员12人，造价人员2人",
+      "adjustable": "杨妍辅助",
+      "difficulty": "medium",
+      "difficulty_name": "中难度（重要常规）",
+      "current_person": "吴琳音"
+    },
+    {
+      "level1": "人事管理",
+      "level2": "人员招聘与配置",
+      "level3": "招聘报告",
+      "description": "新增招聘需求报告撰写、跟进",
+      "remark": "",
+      "adjustable": "",
+      "difficulty": "low",
+      "difficulty_name": "低难度（基础事务）",
+      "current_person": "吴琳音"
+    },
+    {
+      "level1": "人事管理",
+      "level2": "人员招聘与配置",
+      "level3": "人力招聘情况报表",
+      "description": "每月提报招聘情况",
+      "remark": "",
+      "adjustable": "",
+      "difficulty": "low",
+      "difficulty_name": "低难度（基础事务）",
+      "current_person": "吴琳音"
+    },
+    {
+      "level1": "人事管理",
+      "level2": "绩效考核",
+      "level3": "考核方案",
+      "description": "具体部门/岗位的考核方案",
+      "remark": "",
+      "adjustable": "",
+      "difficulty": "high",
+      "difficulty_name": "高难度（核心关键）",
+      "current_person": "吴琳音"
+    },
+    {
+      "level1": "人事管理",
+      "level2": "绩效考核",
+      "level3": "考核制度",
+      "description": "考核制度修订",
+      "remark": "",
+      "adjustable": "",
+      "difficulty": "high",
+      "difficulty_name": "高难度（核心关键）",
+      "current_person": "吴琳音"
+    },
+    {
+      "level1": "人事管理",
+      "level2": "绩效考核",
+      "level3": "绩效评估",
+      "description": "员工绩效考核工作",
+      "remark": "",
+      "adjustable": "",
+      "difficulty": "medium",
+      "difficulty_name": "中难度（重要常规）",
+      "current_person": "吴琳音"
+    },
+    {
+      "level1": "人事管理",
+      "level2": "员工关系",
+      "level3": "花名册",
+      "description": "每月更新员工信息",
+      "remark": "",
+      "adjustable": "移交杨妍",
+      "difficulty": "low",
+      "difficulty_name": "低难度（基础事务）",
+      "current_person": "吴琳音"
+    },
+    {
+      "level1": "人事管理",
+      "level2": "员工关系",
+      "level3": "入离职面谈",
+      "description": "入职背调/离职沟通/辞退面谈",
+      "remark": "",
+      "adjustable": "",
+      "difficulty": "medium",
+      "difficulty_name": "中难度（重要常规）",
+      "current_person": "吴琳音"
+    },
+    {
+      "level1": "人事管理",
+      "level2": "员工关系",
+      "level3": "入转调离",
+      "description": "入转调离手续办理，HR平台信息更新",
+      "remark": "",
+      "adjustable": "移交杨妍",
+      "difficulty": "low",
+      "difficulty_name": "低难度（基础事务）",
+      "current_person": "吴琳音"
+    },
+    {
+      "level1": "人事管理",
+      "level2": "员工关系",
+      "level3": "劳动纠纷处理",
+      "description": "劳动纠纷处理",
+      "remark": "",
+      "adjustable": "",
+      "difficulty": "high",
+      "difficulty_name": "高难度（核心关键）",
+      "current_person": "吴琳音"
+    },
+    {
+      "level1": "人事管理",
+      "level2": "员工关系",
+      "level3": "合同管理",
+      "description": "员工合同台账更新、合同续签",
+      "remark": "",
+      "adjustable": "",
+      "difficulty": "medium",
+      "difficulty_name": "中难度（重要常规）",
+      "current_person": "吴琳音"
+    },
+    {
+      "level1": "人事管理",
+      "level2": "其他",
+      "level3": "审计配合",
+      "description": "内审/外审/专项审计",
+      "remark": "",
+      "adjustable": "",
+      "difficulty": "medium",
+      "difficulty_name": "中难度（重要常规）",
+      "current_person": "吴琳音"
+    },
+    {
+      "level1": "综合行政",
+      "level2": "公文处理",
+      "level3": "文件收发",
+      "description": "公司函件、任命及对外函件",
+      "remark": "",
+      "adjustable": "",
+      "difficulty": "medium",
+      "difficulty_name": "中难度（重要常规）",
+      "current_person": "杨妍"
+    },
+    {
+      "level1": "综合行政",
+      "level2": "会议组织",
+      "level3": "班子会",
+      "description": "班子会记录和会议平台资料上传",
+      "remark": "",
+      "adjustable": "",
+      "difficulty": "high",
+      "difficulty_name": "高难度（核心关键）",
+      "current_person": "杨妍"
+    },
+    {
+      "level1": "综合行政",
+      "level2": "公车管理",
+      "level3": "车辆管理",
+      "description": "车辆登记、季度保养维修、ETC统计报销",
+      "remark": "",
+      "adjustable": "",
+      "difficulty": "medium",
+      "difficulty_name": "中难度（重要常规）",
+      "current_person": "杨妍"
+    },
+    {
+      "level1": "综合行政",
+      "level2": "印章管理",
+      "level3": "上网章及项目章",
+      "description": "日常用印、项目章刻制回收管理",
+      "remark": "",
+      "adjustable": "",
+      "difficulty": "low",
+      "difficulty_name": "低难度（基础事务）",
+      "current_person": "杨妍"
+    },
+    {
+      "level1": "综合行政",
+      "level2": "对外报表",
+      "level3": "统计报表及五险一金报送",
+      "description": "金牛区、统计局、经济局联网直报平台报送",
+      "remark": "",
+      "adjustable": "",
+      "difficulty": "medium",
+      "difficulty_name": "中难度（重要常规）",
+      "current_person": "杨妍"
+    },
+    {
+      "level1": "工会群团",
+      "level2": "工会综合工作",
+      "level3": "活动组织、职工慰问",
+      "description": "日常慰问、群团委活动组织",
+      "remark": "",
+      "adjustable": "",
+      "difficulty": "medium",
+      "difficulty_name": "中难度（重要常规）",
+      "current_person": "杨妍"
+    },
+    {
+      "level1": "档案管理",
+      "level2": "档案管理",
+      "level3": "项目、机关资料归档",
+      "description": "项目资料纸质件与电子件归档整理",
+      "remark": "",
+      "adjustable": "",
+      "difficulty": "high",
+      "difficulty_name": "高难度（核心关键）",
+      "current_person": "杨妍"
+    },
+    {
+      "level1": "后勤保障",
+      "level2": "生产资源管理",
+      "level3": "物资采购",
+      "description": "办公用品、仪器设备采购报销及管理及维护",
+      "remark": "",
+      "adjustable": "",
+      "difficulty": "low",
+      "difficulty_name": "低难度（基础事务）",
+      "current_person": "杨妍"
+    },
+    {
+      "level1": "宣传工作",
+      "level2": "内外宣传",
+      "level3": "宣传信息工作",
+      "description": "对接院文宣及集团宣传报送",
+      "remark": "",
+      "adjustable": "移交张诸雍",
+      "difficulty": "medium",
+      "difficulty_name": "中难度（重要常规）",
+      "current_person": "杨妍"
+    },
+    {
+      "level1": "人事管理",
+      "level2": "社保管理",
+      "level3": "五险一金",
+      "description": "缴费、台账、业务办理、成本核算",
+      "remark": "",
+      "adjustable": "",
+      "difficulty": "medium",
+      "difficulty_name": "中难度（重要常规）",
+      "current_person": "杨妍"
+    },
+    {
+      "level1": "人事管理",
+      "level2": "职称评审",
+      "level3": "职称评审",
+      "description": "初、中、高级职称初审、聘任及台账",
+      "remark": "",
+      "adjustable": "",
+      "difficulty": "high",
+      "difficulty_name": "高难度（核心关键）",
+      "current_person": "杨妍"
+    },
+    {
+      "level1": "内控风控",
+      "level2": "审计监督",
+      "level3": "内外部审计对接",
+      "description": "内外审、正风肃纪、专项审计",
+      "remark": "",
+      "adjustable": "",
+      "difficulty": "medium",
+      "difficulty_name": "中难度（重要常规）",
+      "current_person": "杨妍"
+    },
+    {
+      "level1": "临时专项",
+      "level2": "其他",
+      "level3": "其他",
+      "description": "公司宣传栏、四楼平台建设、废改立、文件汇编、善建云招投标",
+      "remark": "",
+      "adjustable": "",
+      "difficulty": "medium",
+      "difficulty_name": "中难度（重要常规）",
+      "current_person": "杨妍"
+    }
+  ],
+  "difficulty_options": [
+    {
+      "value": "high",
+      "label": "高难度（核心关键）"
+    },
+    {
+      "value": "medium",
+      "label": "中难度（重要常规）"
+    },
+    {
+      "value": "low",
+      "label": "低难度（基础事务）"
+    }
+  ]
+}
