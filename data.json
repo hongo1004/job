@@ -2,7 +2,7 @@
   "persons": [
     {
       "name": "吴琳音",
-      "count": 32,
+      "count": 25,
       "tasks": [
         {
           "level1": "党建工作",
@@ -106,17 +106,6 @@
         {
           "level1": "人事管理",
           "level2": "培训与人才发展",
-          "level3": "培训实施",
-          "description": "每月一次培训组织",
-          "remark": "",
-          "adjustable": "",
-          "difficulty": "medium",
-          "difficulty_name": "中难度（重要常规）",
-          "current_person": "吴琳音"
-        },
-        {
-          "level1": "人事管理",
-          "level2": "培训与人才发展",
           "level3": "培训讲师制度",
           "description": "培训讲师制度制定，以及人员选拔",
           "remark": "",
@@ -134,17 +123,6 @@
           "adjustable": "",
           "difficulty": "high",
           "difficulty_name": "高难度（核心关键）",
-          "current_person": "吴琳音"
-        },
-        {
-          "level1": "人事管理",
-          "level2": "培训与人才发展",
-          "level3": "师带徒",
-          "description": "师带徒方案落地执行",
-          "remark": "",
-          "adjustable": "移交杨妍",
-          "difficulty": "medium",
-          "difficulty_name": "中难度（重要常规）",
           "current_person": "吴琳音"
         },
         {
@@ -183,17 +161,6 @@
         {
           "level1": "人事管理",
           "level2": "薪酬管理",
-          "level3": "钉钉考勤系统",
-          "description": "打卡记录、请休假、考勤统计等",
-          "remark": "",
-          "adjustable": "",
-          "difficulty": "medium",
-          "difficulty_name": "中难度（重要常规）",
-          "current_person": "吴琳音"
-        },
-        {
-          "level1": "人事管理",
-          "level2": "薪酬管理",
           "level3": "常态化数据采集",
           "description": "薪酬及稳岗就业数据采集工作",
           "remark": "",
@@ -222,17 +189,6 @@
           "adjustable": "",
           "difficulty": "high",
           "difficulty_name": "高难度（核心关键）",
-          "current_person": "吴琳音"
-        },
-        {
-          "level1": "人事管理",
-          "level2": "人员招聘与配置",
-          "level3": "筛选、面试",
-          "description": "2026年常规招聘4人，新项目招聘14人",
-          "remark": "技术服务事业部主管1人，造价技术负责人2人，技术支持人员1人；监理人员12人，造价人员2人",
-          "adjustable": "杨妍辅助",
-          "difficulty": "medium",
-          "difficulty_name": "中难度（重要常规）",
           "current_person": "吴琳音"
         },
         {
@@ -293,17 +249,6 @@
         {
           "level1": "人事管理",
           "level2": "员工关系",
-          "level3": "花名册",
-          "description": "每月更新员工信息",
-          "remark": "",
-          "adjustable": "移交杨妍",
-          "difficulty": "low",
-          "difficulty_name": "低难度（基础事务）",
-          "current_person": "吴琳音"
-        },
-        {
-          "level1": "人事管理",
-          "level2": "员工关系",
           "level3": "入离职面谈",
           "description": "入职背调/离职沟通/辞退面谈",
           "remark": "",
@@ -315,34 +260,12 @@
         {
           "level1": "人事管理",
           "level2": "员工关系",
-          "level3": "入转调离",
-          "description": "入转调离手续办理，HR平台信息更新",
-          "remark": "",
-          "adjustable": "移交杨妍",
-          "difficulty": "low",
-          "difficulty_name": "低难度（基础事务）",
-          "current_person": "吴琳音"
-        },
-        {
-          "level1": "人事管理",
-          "level2": "员工关系",
           "level3": "劳动纠纷处理",
           "description": "劳动纠纷处理",
           "remark": "",
           "adjustable": "",
           "difficulty": "high",
           "difficulty_name": "高难度（核心关键）",
-          "current_person": "吴琳音"
-        },
-        {
-          "level1": "人事管理",
-          "level2": "员工关系",
-          "level3": "合同管理",
-          "description": "员工合同台账更新、合同续签",
-          "remark": "",
-          "adjustable": "",
-          "difficulty": "medium",
-          "difficulty_name": "中难度（重要常规）",
           "current_person": "吴琳音"
         },
         {
@@ -360,8 +283,85 @@
     },
     {
       "name": "杨妍",
-      "count": 13,
+      "count": 20,
       "tasks": [
+        {
+          "level1": "人事管理",
+          "level2": "培训与人才发展",
+          "level3": "培训实施",
+          "description": "每月一次培训组织",
+          "remark": "",
+          "adjustable": "吴琳音",
+          "difficulty": "medium",
+          "difficulty_name": "中难度（重要常规）",
+          "current_person": "杨妍"
+        },
+        {
+          "level1": "人事管理",
+          "level2": "培训与人才发展",
+          "level3": "师带徒",
+          "description": "师带徒方案落地执行",
+          "remark": "",
+          "adjustable": "吴琳音",
+          "difficulty": "medium",
+          "difficulty_name": "中难度（重要常规）",
+          "current_person": "杨妍"
+        },
+        {
+          "level1": "人事管理",
+          "level2": "薪酬管理",
+          "level3": "钉钉考勤系统",
+          "description": "打卡记录、请休假、考勤统计等",
+          "remark": "",
+          "adjustable": "吴琳音",
+          "difficulty": "medium",
+          "difficulty_name": "中难度（重要常规）",
+          "current_person": "杨妍"
+        },
+        {
+          "level1": "人事管理",
+          "level2": "人员招聘与配置",
+          "level3": "筛选、面试",
+          "description": "2026年常规招聘4人，新项目招聘14人",
+          "remark": "技术服务事业部主管1人，造价技术负责人2人，技术支持人员1人；监理人员12人，造价人员2人",
+          "adjustable": "吴琳音",
+          "difficulty": "medium",
+          "difficulty_name": "中难度（重要常规）",
+          "current_person": "杨妍"
+        },
+        {
+          "level1": "人事管理",
+          "level2": "员工关系",
+          "level3": "花名册",
+          "description": "每月更新员工信息",
+          "remark": "",
+          "adjustable": "吴琳音",
+          "difficulty": "low",
+          "difficulty_name": "低难度（基础事务）",
+          "current_person": "杨妍"
+        },
+        {
+          "level1": "人事管理",
+          "level2": "员工关系",
+          "level3": "入转调离",
+          "description": "入转调离手续办理，HR平台信息更新",
+          "remark": "",
+          "adjustable": "吴琳音",
+          "difficulty": "low",
+          "difficulty_name": "低难度（基础事务）",
+          "current_person": "杨妍"
+        },
+        {
+          "level1": "人事管理",
+          "level2": "员工关系",
+          "level3": "合同管理",
+          "description": "员工合同台账更新、合同续签",
+          "remark": "",
+          "adjustable": "吴琳音",
+          "difficulty": "medium",
+          "difficulty_name": "中难度（重要常规）",
+          "current_person": "杨妍"
+        },
         {
           "level1": "综合行政",
           "level2": "公文处理",
@@ -456,7 +456,7 @@
           "level3": "宣传信息工作",
           "description": "对接院文宣及集团宣传报送",
           "remark": "",
-          "adjustable": "移交张诸雍",
+          "adjustable": "",
           "difficulty": "medium",
           "difficulty_name": "中难度（重要常规）",
           "current_person": "杨妍"
@@ -614,10 +614,10 @@
       "level3": "培训实施",
       "description": "每月一次培训组织",
       "remark": "",
-      "adjustable": "",
+      "adjustable": "吴琳音",
       "difficulty": "medium",
       "difficulty_name": "中难度（重要常规）",
-      "current_person": "吴琳音"
+      "current_person": "杨妍"
     },
     {
       "level1": "人事管理",
@@ -647,10 +647,10 @@
       "level3": "师带徒",
       "description": "师带徒方案落地执行",
       "remark": "",
-      "adjustable": "移交杨妍",
+      "adjustable": "吴琳音",
       "difficulty": "medium",
       "difficulty_name": "中难度（重要常规）",
-      "current_person": "吴琳音"
+      "current_person": "杨妍"
     },
     {
       "level1": "人事管理",
@@ -691,10 +691,10 @@
       "level3": "钉钉考勤系统",
       "description": "打卡记录、请休假、考勤统计等",
       "remark": "",
-      "adjustable": "",
+      "adjustable": "吴琳音",
       "difficulty": "medium",
       "difficulty_name": "中难度（重要常规）",
-      "current_person": "吴琳音"
+      "current_person": "杨妍"
     },
     {
       "level1": "人事管理",
@@ -735,10 +735,10 @@
       "level3": "筛选、面试",
       "description": "2026年常规招聘4人，新项目招聘14人",
       "remark": "技术服务事业部主管1人，造价技术负责人2人，技术支持人员1人；监理人员12人，造价人员2人",
-      "adjustable": "杨妍辅助",
+      "adjustable": "吴琳音",
       "difficulty": "medium",
       "difficulty_name": "中难度（重要常规）",
-      "current_person": "吴琳音"
+      "current_person": "杨妍"
     },
     {
       "level1": "人事管理",
@@ -801,10 +801,10 @@
       "level3": "花名册",
       "description": "每月更新员工信息",
       "remark": "",
-      "adjustable": "移交杨妍",
+      "adjustable": "吴琳音",
       "difficulty": "low",
       "difficulty_name": "低难度（基础事务）",
-      "current_person": "吴琳音"
+      "current_person": "杨妍"
     },
     {
       "level1": "人事管理",
@@ -823,10 +823,10 @@
       "level3": "入转调离",
       "description": "入转调离手续办理，HR平台信息更新",
       "remark": "",
-      "adjustable": "移交杨妍",
+      "adjustable": "吴琳音",
       "difficulty": "low",
       "difficulty_name": "低难度（基础事务）",
-      "current_person": "吴琳音"
+      "current_person": "杨妍"
     },
     {
       "level1": "人事管理",
@@ -845,10 +845,10 @@
       "level3": "合同管理",
       "description": "员工合同台账更新、合同续签",
       "remark": "",
-      "adjustable": "",
+      "adjustable": "吴琳音",
       "difficulty": "medium",
       "difficulty_name": "中难度（重要常规）",
-      "current_person": "吴琳音"
+      "current_person": "杨妍"
     },
     {
       "level1": "人事管理",
@@ -955,7 +955,7 @@
       "level3": "宣传信息工作",
       "description": "对接院文宣及集团宣传报送",
       "remark": "",
-      "adjustable": "移交张诸雍",
+      "adjustable": "",
       "difficulty": "medium",
       "difficulty_name": "中难度（重要常规）",
       "current_person": "杨妍"
